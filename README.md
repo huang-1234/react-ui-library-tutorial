@@ -455,7 +455,7 @@ yarn start # or yarn dev
 
 在`components/alert/`文件夹下新建`demo`文件夹，存放我们在编写文档时需要引用的 `demo`。
 
-**components/alert/demo/1-demo-basic.tsx**
+**components/alert/demo/basic.tsx**
 
 ```jsx
 import React from 'react';
@@ -893,7 +893,7 @@ exports.onCreateWebpackConfig = args => {
 
 ### 改造相关文件
 
-**components/alert/demo/1-demo-basic.tsx**
+**components/alert/demo/basic.tsx**
 
 ```diff
 - import Alert from '../alert';
@@ -909,7 +909,7 @@ exports.onCreateWebpackConfig = args => {
 - import { Playground } from 'docz';
 + import { HappyBox } from '../../doc-comps';
 
-+ import BasicDemoCode from '!raw-loader!./demo/1-demo-basic.tsx';
++ import BasicDemoCode from '!raw-loader!./demo/basic.tsx';
 
 ...
 

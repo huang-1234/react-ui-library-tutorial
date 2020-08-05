@@ -1,0 +1,32 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import Alert from 'happy-ui/esm/alert';
+import 'happy-ui/esm/alert/style';
+
+
+
+<Meta title="Alert" component={Alert} />
+
+# Alert 警告提示
+
+警告提示，展现需要关注的信息。
+
+## 基本用法
+
+<Preview>
+  <Story name="basic">
+    <Alert>basic alert</Alert>
+  </Story>
+</Preview>
+
+## 不同类型
+
+<Preview>
+  <Story name="type">
+    <>
+      <Alert kind="info">info alert</Alert>
+      <Alert kind="warning">warning alert</Alert>
+      <Alert kind="positive">positive alert</Alert>
+      <Alert kind="negative">negative alert</Alert>
+    </>
+  </Story>
+</Preview>
